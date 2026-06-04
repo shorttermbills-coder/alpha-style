@@ -1,10 +1,11 @@
 {
   "Adidas": {
     "slug": "adidas",
-    "cover": "/Adidas/Adizero/IMG-20250925-WA0001.jpg",
+    "cover": "/Adidas/cover.jpg",
     "models": {
       "Adizero": {
         "slug": "adizero",
+        "cover": "/Adidas/Adizero/cover.jpg",
         "images": [
           "/Adidas/Adizero/IMG-20250925-WA0001.jpg",
           "/Adidas/Adizero/IMG-20250924-WA0026.jpg",
@@ -33,6 +34,7 @@
       },
       "Campus": {
         "slug": "campus",
+        "cover": "/Adidas/Campus/Photo%20%2811%29.jpg",
         "images": [
           "/Adidas/Campus/Photo%20%2811%29.jpg",
           "/Adidas/Campus/Photo%20%283%29.jpg",
@@ -54,6 +56,7 @@
       },
       "Gazelle": {
         "slug": "gazelle",
+        "cover": "/Adidas/Gazelle/Photo%20%286%29.jpg",
         "images": [
           "/Adidas/Gazelle/Photo%20%286%29.jpg",
           "/Adidas/Gazelle/Photo%20%283%29.jpg",
@@ -71,6 +74,7 @@
       },
       "Japan": {
         "slug": "japan",
+        "cover": "/Adidas/Japan/IMG-20250618-WA0029.jpg",
         "images": [
           "/Adidas/Japan/IMG-20250618-WA0029.jpg",
           "/Adidas/Japan/IMG-20250618-WA0035.jpg",
@@ -79,6 +83,7 @@
       },
       "Samba": {
         "slug": "samba",
+        "cover": "/Adidas/Samba/cover.jpg",
         "images": [
           "/Adidas/Samba/Photo%20%284%29.jpg",
           "/Adidas/Samba/Photo%20%2837%29.jpg",
@@ -143,6 +148,7 @@
       },
       "Samba Jane": {
         "slug": "samba-jane",
+        "cover": "/Adidas/Samba%20Jane/IMG_20260512_160227_842.jpg",
         "images": [
           "/Adidas/Samba%20Jane/IMG_20260512_160227_842.jpg",
           "/Adidas/Samba%20Jane/IMG_20260512_160314_715.jpg",
@@ -151,6 +157,7 @@
       },
       "SL 72 RS": {
         "slug": "sl-72-rs",
+        "cover": "/Adidas/SL%2072%20RS/Photo%20%283%29.jpg",
         "images": [
           "/Adidas/SL%2072%20RS/Photo%20%283%29.jpg",
           "/Adidas/SL%2072%20RS/Photo%20%282%29.jpg",
@@ -161,6 +168,7 @@
       },
       "Spezial": {
         "slug": "spezial",
+        "cover": "/Adidas/Spezial/Photo%20%2814%29.jpg",
         "images": [
           "/Adidas/Spezial/Photo%20%2814%29.jpg",
           "/Adidas/Spezial/Photo%20%283%29.jpg",
@@ -186,6 +194,7 @@
     "models": {
       "Asics Sabot": {
         "slug": "asics-sabot",
+        "cover": "/Asics/Asics%20Sabot/Photo%20%283%29.jpg",
         "images": [
           "/Asics/Asics%20Sabot/Photo%20%283%29.jpg",
           "/Asics/Asics%20Sabot/Photo%20%286%29.jpg",
@@ -201,6 +210,7 @@
       },
       "Ballet": {
         "slug": "ballet",
+        "cover": "/Asics/Ballet/IMG_20260529_003205.png",
         "images": [
           "/Asics/Ballet/IMG_20260529_003205.png",
           "/Asics/Ballet/Giay-Onitsuka-Tiger-Mexico-66-TGRS-Silver-Cream-1182A660-020-2-1.png",
@@ -211,12 +221,14 @@
       },
       "Contend": {
         "slug": "contend",
+        "cover": "/Asics/Contend/Asics%20Contend.jpeg",
         "images": [
           "/Asics/Contend/Asics%20Contend.jpeg"
         ]
       },
       "Kayano 14": {
         "slug": "kayano-14",
+        "cover": "/Asics/Kayano%2014/IMG-20240428-WA0017%282%29.jpg",
         "images": [
           "/Asics/Kayano%2014/IMG-20240428-WA0017%282%29.jpg",
           "/Asics/Kayano%2014/717vTu0xr3L._AC_UY900_DpWeblab_.jpg",
@@ -232,6 +244,7 @@
       },
       "NYC": {
         "slug": "nyc",
+        "cover": "/Asics/NYC/IMG-20241010-WA0061%282%29.jpg",
         "images": [
           "/Asics/NYC/IMG-20241010-WA0061%282%29.jpg",
           "/Asics/NYC/IMG-20240630-WA0006.jpg",
@@ -249,6 +262,7 @@
       },
       "Onitsuka Tiger": {
         "slug": "onitsuka-tiger",
+        "cover": "/Asics/Onitsuka%20Tiger/Photo%20%2817%29.jpg",
         "images": [
           "/Asics/Onitsuka%20Tiger/Photo%20%2817%29.jpg",
           "/Asics/Onitsuka%20Tiger/Photo%20%285%29.jpg",
@@ -306,6 +320,7 @@
     "models": {
       "Bape STA": {
         "slug": "bape-sta",
+        "cover": "/Bape%20STA/Bape%20STA/Photo%20%282%29.jpg",
         "images": [
           "/Bape%20STA/Bape%20STA/Photo%20%282%29.jpg",
           "/Bape%20STA/Bape%20STA/Photo%20%285%29.jpg",
@@ -324,6 +339,7 @@
     "models": {
       "Brooks": {
         "slug": "brooks",
+        "cover": "/Brooks/Brooks/IMG-20260118-WA0004%281%29.jpg",
         "images": [
           "/Brooks/Brooks/IMG-20260118-WA0004%281%29.jpg",
           "/Brooks/Brooks/IMG-20251013-WA0030%283%29.jpg",
@@ -340,6 +356,7 @@
     "models": {
       "Converse": {
         "slug": "converse",
+        "cover": "/Converse/Converse/Photo%20%2830%29.jpg",
         "images": [
           "/Converse/Converse/Photo%20%2830%29.jpg",
           "/Converse/Converse/Photo%20%2811%29.jpg",
@@ -381,6 +398,7 @@
     "models": {
       "Crocs": {
         "slug": "crocs",
+        "cover": "/Crocs/Crocs/Photo%20%2826%29.jpg",
         "images": [
           "/Crocs/Crocs/Photo%20%2826%29.jpg",
           "/Crocs/Crocs/Photo%20%2828%29.jpg",
@@ -428,6 +446,7 @@
     "models": {
       "Hoka": {
         "slug": "hoka",
+        "cover": "/Hoka/Hoka/IMG-20250505-WA0042%281%29.jpg",
         "images": [
           "/Hoka/Hoka/IMG-20250505-WA0042%281%29.jpg",
           "/Hoka/Hoka/IMG-20250505-WA0013%281%29.jpg",
@@ -464,6 +483,7 @@
     "models": {
       "Kids": {
         "slug": "kids",
+        "cover": "/Kids/Kids/Photo%20%2814%29.jpg",
         "images": [
           "/Kids/Kids/Photo%20%2814%29.jpg",
           "/Kids/Kids/IMG-20250924-WA0044%281%29.jpg",
@@ -514,6 +534,7 @@
     "models": {
       "Miu Miu": {
         "slug": "miu-miu",
+        "cover": "/New%20Balance/Miu%20Miu/Photo%20%289%29.jpg",
         "images": [
           "/New%20Balance/Miu%20Miu/Photo%20%289%29.jpg",
           "/New%20Balance/Miu%20Miu/Photo%20%281%29.jpg",
@@ -528,6 +549,7 @@
       },
       "NB 327": {
         "slug": "nb-327",
+        "cover": "/New%20Balance/NB%20327/Photo%20%282%29.jpg",
         "images": [
           "/New%20Balance/NB%20327/Photo%20%282%29.jpg",
           "/New%20Balance/NB%20327/Photo%20%283%29.jpg",
@@ -542,6 +564,7 @@
       },
       "NB 530": {
         "slug": "nb-530",
+        "cover": "/New%20Balance/NB%20530/Photo%20%284%29.jpg",
         "images": [
           "/New%20Balance/NB%20530/Photo%20%284%29.jpg",
           "/New%20Balance/NB%20530/Photo%20%283%29.jpg",
@@ -556,6 +579,7 @@
       },
       "NB 550": {
         "slug": "nb-550",
+        "cover": "/New%20Balance/NB%20550/Photo%20%2810%29.jpg",
         "images": [
           "/New%20Balance/NB%20550/Photo%20%2810%29.jpg",
           "/New%20Balance/NB%20550/Photo%20%282%29.jpeg",
@@ -572,6 +596,7 @@
       },
       "NB 740": {
         "slug": "nb-740",
+        "cover": "/New%20Balance/NB%20740/IMG-20260426-WA0048%285%29.jpg",
         "images": [
           "/New%20Balance/NB%20740/IMG-20260426-WA0048%285%29.jpg",
           "/New%20Balance/NB%20740/IMG-20251126-WA0022.jpg",
@@ -592,6 +617,7 @@
       },
       "NB 9060": {
         "slug": "nb-9060",
+        "cover": "/New%20Balance/NB%209060/Photo%20%2848%29.jpg",
         "images": [
           "/New%20Balance/NB%209060/Photo%20%2848%29.jpg",
           "/New%20Balance/NB%209060/Photo%20%2845%29.jpg",
@@ -649,6 +675,7 @@
       },
       "z Others": {
         "slug": "z-others",
+        "cover": "/New%20Balance/z%20Others/Photo%20%2829%29.jpg",
         "images": [
           "/New%20Balance/z%20Others/Photo%20%2829%29.jpg",
           "/New%20Balance/z%20Others/Photo%20%2832%29.jpg",
@@ -695,6 +722,7 @@
     "models": {
       "Air max": {
         "slug": "air-max",
+        "cover": "/Nike/Air%20max/Photo%20%20%286%29.jpg",
         "images": [
           "/Nike/Air%20max/Photo%20%20%286%29.jpg",
           "/Nike/Air%20max/Photo%20%20%287%29.jpg",
@@ -708,6 +736,7 @@
       },
       "Blazer": {
         "slug": "blazer",
+        "cover": "/Nike/Blazer/Photo%20%284%29.jpg",
         "images": [
           "/Nike/Blazer/Photo%20%284%29.jpg",
           "/Nike/Blazer/Photo%20%286%29.jpg",
@@ -719,6 +748,7 @@
       },
       "Dunk": {
         "slug": "dunk",
+        "cover": "/Nike/Dunk/Photo%20%28133%29.jpg",
         "images": [
           "/Nike/Dunk/Photo%20%28133%29.jpg",
           "/Nike/Dunk/Photo%20%2831%29.jpg",
@@ -900,6 +930,7 @@
       },
       "Initiator": {
         "slug": "initiator",
+        "cover": "/Nike/Initiator/file_00000000eadc720abff034ac5dd312fd.png",
         "images": [
           "/Nike/Initiator/file_00000000eadc720abff034ac5dd312fd.png",
           "/Nike/Initiator/file_000000000b5c71f4a2a0bb8b609bd626.png",
@@ -909,6 +940,7 @@
       },
       "Jordan 1 high": {
         "slug": "jordan-1-high",
+        "cover": "/Nike/Jordan%201%20high/Photo%20%2872%29.jpg",
         "images": [
           "/Nike/Jordan%201%20high/Photo%20%2872%29.jpg",
           "/Nike/Jordan%201%20high/Photo%20%287%29.jpg",
@@ -1028,6 +1060,7 @@
       },
       "Jordan 1 low": {
         "slug": "jordan-1-low",
+        "cover": "/Nike/Jordan%201%20low/Photo%20%2853%29.jpg",
         "images": [
           "/Nike/Jordan%201%20low/Photo%20%2853%29.jpg",
           "/Nike/Jordan%201%20low/Photo%20%2888%29.jpg",
@@ -1146,6 +1179,7 @@
       },
       "Jordan 4": {
         "slug": "jordan-4",
+        "cover": "/Nike/Jordan%204/Photo%20%2824%29.jpg",
         "images": [
           "/Nike/Jordan%204/Photo%20%2824%29.jpg",
           "/Nike/Jordan%204/Photo%20%287%29.jpg",
@@ -1192,6 +1226,7 @@
       },
       "Kobe": {
         "slug": "kobe",
+        "cover": "/Nike/Kobe/Photo%20%285%29.jpg",
         "images": [
           "/Nike/Kobe/Photo%20%285%29.jpg",
           "/Nike/Kobe/Photo%20%286%29.jpg",
@@ -1209,6 +1244,7 @@
       },
       "LDWaffle": {
         "slug": "ldwaffle",
+        "cover": "/Nike/LDWaffle/Photo%20%282%29.jpg",
         "images": [
           "/Nike/LDWaffle/Photo%20%282%29.jpg",
           "/Nike/LDWaffle/Photo%20%283%29.jpg",
@@ -1217,6 +1253,7 @@
       },
       "M2K": {
         "slug": "m2k",
+        "cover": "/Nike/M2K/Photo%20%283%29.jpg",
         "images": [
           "/Nike/M2K/Photo%20%283%29.jpg",
           "/Nike/M2K/Photo%20%281%29.jpg",
@@ -1226,6 +1263,7 @@
       },
       "Others": {
         "slug": "others",
+        "cover": "/Nike/Others/Photo%20%282%29.jpg",
         "images": [
           "/Nike/Others/Photo%20%282%29.jpg",
           "/Nike/Others/Photo%20%285%29.jpg",
@@ -1239,6 +1277,7 @@
       },
       "P-6000": {
         "slug": "p-6000",
+        "cover": "/Nike/P-6000/Photo%20%285%29.jpg",
         "images": [
           "/Nike/P-6000/Photo%20%285%29.jpg",
           "/Nike/P-6000/Photo%20%286%29.jpeg",
@@ -1251,6 +1290,7 @@
       },
       "RNR": {
         "slug": "rnr",
+        "cover": "/Nike/RNR/IMG-20260204-WA0063.jpg",
         "images": [
           "/Nike/RNR/IMG-20260204-WA0063.jpg",
           "/Nike/RNR/IMG-20260107-WA0006%282%29.jpg",
@@ -1265,6 +1305,7 @@
       },
       "Uptempo": {
         "slug": "uptempo",
+        "cover": "/Nike/Uptempo/Photo%20%283%29.jpg",
         "images": [
           "/Nike/Uptempo/Photo%20%283%29.jpg",
           "/Nike/Uptempo/Photo%20%284%29.jpg",
@@ -1276,6 +1317,7 @@
       },
       "V2K": {
         "slug": "v2k",
+        "cover": "/Nike/V2K/Photo%20%282%29.jpg",
         "images": [
           "/Nike/V2K/Photo%20%282%29.jpg",
           "/Nike/V2K/Photo%20%285%29.jpg",
@@ -1288,6 +1330,7 @@
       },
       "Vomero": {
         "slug": "vomero",
+        "cover": "/Nike/Vomero/IMG_20250405_135655_724.jpg",
         "images": [
           "/Nike/Vomero/IMG_20250405_135655_724.jpg",
           "/Nike/Vomero/Photo%20%286%29.jpg",
@@ -1307,6 +1350,7 @@
     "models": {
       "On Cloud": {
         "slug": "on-cloud",
+        "cover": "/ON%20Cloud/On%20Cloud/169.jpg",
         "images": [
           "/ON%20Cloud/On%20Cloud/169.jpg",
           "/ON%20Cloud/On%20Cloud/151.jpg",
@@ -1529,6 +1573,7 @@
     "models": {
       "Ballet": {
         "slug": "ballet",
+        "cover": "/Puma/Ballet/489886459-4026252197696739-4340197212567380619-n-1744285920186.jpg",
         "images": [
           "/Puma/Ballet/489886459-4026252197696739-4340197212567380619-n-1744285920186.jpg",
           "/Puma/Ballet/png.jpeg",
@@ -1541,6 +1586,7 @@
       },
       "Speedcat": {
         "slug": "speedcat",
+        "cover": "/Puma/Speedcat/IMG-20250830-WA0049.jpg",
         "images": [
           "/Puma/Speedcat/IMG-20250830-WA0049.jpg",
           "/Puma/Speedcat/Picsart_25-09-09_03-23-45-265.jpg",
@@ -1566,6 +1612,7 @@
     "models": {
       "UGGs": {
         "slug": "uggs",
+        "cover": "/Uggs/UGGs/Photo%20%282%29.jpg",
         "images": [
           "/Uggs/UGGs/Photo%20%282%29.jpg",
           "/Uggs/UGGs/Photo%20%283%29.jpg",
@@ -1582,6 +1629,7 @@
     "models": {
       "Vans": {
         "slug": "vans",
+        "cover": "/Vans/Vans/IMG-20240712-WA0011%283%29.jpg",
         "images": [
           "/Vans/Vans/IMG-20240712-WA0011%283%29.jpg",
           "/Vans/Vans/IMG-20240711-WA0038%287%29.jpg",

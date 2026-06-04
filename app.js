@@ -82,7 +82,7 @@ function renderModels(data, brandSlug){
 
         html += `
         <a href="/${brandSlug}/${modelData.slug}" class="card">
-            <img src="${modelData.images[0]}" loading="lazy">
+            <img src="${modelData.cover}" loading="lazy">
 
             <div class="card-body">
                 <div class="card-title">${model}</div>
