@@ -689,30 +689,6 @@
       }
     }
   },
-  "New folder": {
-    "slug": "new-folder",
-    "cover": "/New%20folder/Asics/Photo%20%281%29.jpeg",
-    "models": {
-      "Asics": {
-        "slug": "asics",
-        "images": [
-          "/New%20folder/Asics/Photo%20%281%29.jpeg"
-        ]
-      },
-      "New Balance": {
-        "slug": "new-balance",
-        "images": [
-          "/New%20folder/New%20Balance/Photo%20%281%29.jpeg"
-        ]
-      },
-      "Nike": {
-        "slug": "nike",
-        "images": [
-          "/New%20folder/Nike/Photo%20%281%29.jpeg"
-        ]
-      }
-    }
-  },
   "Nike": {
     "slug": "nike",
     "cover": "/Nike/Air%20max/Photo%20%20%286%29.jpg",
