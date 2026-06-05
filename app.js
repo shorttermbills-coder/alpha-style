@@ -44,7 +44,7 @@ function renderBrands(data){
     "Nike",
     "Asics",
     "New Balance",
-    "On Cloud",
+    "ON Cloud",
     "Puma",
     "Kids",
     "Hoka",
