@@ -39,7 +39,36 @@ function renderBrands(data){
     <div class="grid">
     `;
 
-    Object.keys(data).forEach(brand => {
+    const brandOrder = [
+     "Adidas",
+    "Nike",
+    "Asics",
+    "New Balance",
+    "On Cloud",
+    "Puma",
+    "Kids",
+    "Hoka",
+    "Brooks",
+    "Vans",
+    "Bape STA",
+    "Converse",
+    "Uggs",
+    "Crocs"
+];
+
+const brands = Object.keys(data).sort((a, b) => {
+
+    const ia = brandOrder.indexOf(a);
+    const ib = brandOrder.indexOf(b);
+
+    if (ia === -1 && ib === -1) return a.localeCompare(b);
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+
+    return ia - ib;
+});
+
+brands.forEach(brand => {
 
         html += `
         <a href="/${data[brand].slug}" class="card">
