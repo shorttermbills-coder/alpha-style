@@ -47,9 +47,6 @@ function renderBrands(data){
 
             <div class="card-body">
                 <div class="card-title">${brand}</div>
-                <div class="card-count">
-                    ${Object.keys(data[brand].models).length} Models
-                </div>
             </div>
         </a>
         `;
