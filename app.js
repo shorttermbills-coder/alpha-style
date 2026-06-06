@@ -44,7 +44,7 @@ function renderBrands(data){
     "Nike",
       "New Balance",
   "Asics",    
-Onitsuka Tiger
+"Onitsuka Tiger",
 "Puma",
 "ON Cloud",
     "Kids",
