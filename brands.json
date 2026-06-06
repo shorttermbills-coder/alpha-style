@@ -1517,11 +1517,11 @@
   },
   "Onitsuka Tiger": {
     "slug": "onitsuka-tiger",
-    "cover": "/Onitsuka%20Tiger/file_00000000c6b071f49cc7d2600ebff356.png",
+    "cover": "/Onitsuka%20Tiger/cover.jpg",
     "models": {
       "Mix": {
         "slug": "mix",
-        "cover": "/Onitsuka%20Tiger/file_00000000c6b071f49cc7d2600ebff356.png",
+        "cover": "/Onitsuka%20Tiger/cover.jpg",
         "images": [
           "/Onitsuka%20Tiger/file_00000000c6b071f49cc7d2600ebff356.png",
           "/Onitsuka%20Tiger/WhatsAppImage2025-06-05at11.33.06AM.jpg",

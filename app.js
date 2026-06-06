@@ -42,10 +42,11 @@ function renderBrands(data){
     const brandOrder = [
      "Adidas",
     "Nike",
-    "Asics",
-    "New Balance",
-    "ON Cloud",
-    "Puma",
+      "New Balance",
+  "Asics",    
+Onitsuka Tiger
+"Puma",
+"ON Cloud",
     "Kids",
     "Hoka",
     "Brooks",
