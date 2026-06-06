@@ -190,7 +190,7 @@ function renderModels(data, brandSlug){
 
     html += "</div>";
     app.innerHTML = html;
-}
+
 }
 
 function renderImages(data, brandSlug, modelSlug){
