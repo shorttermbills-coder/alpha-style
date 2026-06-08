@@ -6,40 +6,13 @@ const app = document.getElementById("app");
 let currentImages = [];
 let currentIndex = 0;
 
-fetch("/brands.json")
-.then(r => r.json())
-.then(data => {
-    const path = decodeURIComponent(location.pathname.replace(/^\/|\/$/g, ""));
-
-    if (path === "") {
-        renderBrands(data);
-        return;
-    }
-
-    const parts = path.split("/");
-
-    if (parts.length === 1) {
-        renderBrandItems(data, parts[0]);
-        return;
-    }
-
-    if (parts.length === 2) {
-        renderSecondLevel(data, parts[0], parts[1]);
-        return;
-    }
-
-    if (parts.length === 3) {
-        renderCategoryModel(data, parts[0], parts[1], parts[2]);
-        return;
-    }
-});
-
 const brandOrder = [
     "Adidas",
     "Nike",
     "Asics",
     "New Balance",
     "On Cloud",
+    "ON Cloud",
     "Puma",
     "Kids",
     "Hoka",
@@ -51,135 +24,214 @@ const brandOrder = [
     "Crocs"
 ];
 
-function sortBrands(data) {
-    return Object.keys(data).sort((a, b) => {
-        const ia = brandOrder.indexOf(a);
-        const ib = brandOrder.indexOf(b);
+fetch("/brands.json")
+.then(r => r.json())
+.then(data => {
 
-        if (ia === -1 && ib === -1) return a.localeCompare(b);
-        if (ia === -1) return 1;
-        if (ib === -1) return -1;
+    const path = decodeURIComponent(
+        location.pathname.replace(/^\/|\/$/g, "")
+    );
+
+    if(path === ""){
+        renderBrands(data);
+        return;
+    }
+
+    const parts = path.split("/");
+
+    if(parts.length === 1){
+        renderModels(data, parts[0]);
+        return;
+    }
+
+    if(parts.length === 2){
+        renderSecondLevel(data, parts[0], parts[1]);
+        return;
+    }
+
+    if(parts.length === 3){
+        renderCategoryModel(data, parts[0], parts[1], parts[2]);
+        return;
+    }
+
+    app.innerHTML = "<h1>Not Found</h1>";
+});
+
+function brandRank(name){
+    const exactIndex = brandOrder.indexOf(name);
+
+    if(exactIndex !== -1){
+        return exactIndex;
+    }
+
+    const lowerIndex = brandOrder
+        .map(x => x.toLowerCase())
+        .indexOf(name.toLowerCase());
+
+    return lowerIndex;
+}
+
+function sortedBrands(data){
+    return Object.keys(data).sort((a,b) => {
+
+        const ia = brandRank(a);
+        const ib = brandRank(b);
+
+        if(ia === -1 && ib === -1) return a.localeCompare(b);
+        if(ia === -1) return 1;
+        if(ib === -1) return -1;
 
         return ia - ib;
     });
 }
 
-function renderBrands(data) {
-    let html = `<h1>Brands</h1><div class="grid">`;
+function renderBrands(data){
 
-    sortBrands(data).forEach(brand => {
+    let html = `
+    <h1>Brands</h1>
+    <div class="grid">
+    `;
+
+    sortedBrands(data).forEach(brand => {
+
         html += `
         <a href="/${data[brand].slug}" class="card">
             <img src="${data[brand].cover}" loading="lazy">
+
             <div class="card-body">
                 <div class="card-title">${brand}</div>
             </div>
         </a>
         `;
+
     });
 
     html += "</div>";
+
     app.innerHTML = html;
 }
 
-function renderBrandItems(data, brandSlug) {
-    const brand = Object.keys(data).find(b => data[b].slug === brandSlug);
+function renderModels(data, brandSlug){
 
-    if (!brand) {
+    const brand = Object.keys(data)
+        .find(b => data[b].slug === brandSlug);
+
+    if(!brand){
         app.innerHTML = "<h1>Brand Not Found</h1>";
         return;
     }
 
     let html = `
     <a href="/" class="back-btn">← Brands</a>
+
     <h1>${brand}</h1>
+
     <div class="grid">
     `;
 
-    Object.keys(data[brand].items).forEach(item => {
-        const itemData = data[brand].items[item];
+    Object.keys(data[brand].models).forEach(model => {
+
+        const modelData = data[brand].models[model];
 
         html += `
-        <a href="/${brandSlug}/${itemData.slug}" class="card">
-            <img src="${itemData.cover}" loading="lazy">
+        <a href="/${brandSlug}/${modelData.slug}" class="card">
+            <img src="${modelData.cover}" loading="lazy">
+
             <div class="card-body">
-                <div class="card-title">${item}</div>
+                <div class="card-title">${model}</div>
             </div>
         </a>
         `;
+
     });
 
     html += "</div>";
+
     app.innerHTML = html;
 }
 
-function renderSecondLevel(data, brandSlug, itemSlug) {
-    const brand = Object.keys(data).find(b => data[b].slug === brandSlug);
+function renderSecondLevel(data, brandSlug, modelSlug){
 
-    if (!brand) {
+    const brand = Object.keys(data)
+        .find(b => data[b].slug === brandSlug);
+
+    if(!brand){
         app.innerHTML = "<h1>Brand Not Found</h1>";
         return;
     }
 
-    const item = Object.keys(data[brand].items)
-        .find(i => data[brand].items[i].slug === itemSlug);
+    const model = Object.keys(data[brand].models)
+        .find(m => data[brand].models[m].slug === modelSlug);
 
-    if (!item) {
+    if(!model){
         app.innerHTML = "<h1>Folder Not Found</h1>";
         return;
     }
 
-    const itemData = data[brand].items[item];
+    const modelData = data[brand].models[model];
 
-    if (itemData.type === "model") {
-        renderGallery(brand, brandSlug, item, itemData.images);
+    if(modelData.type === "category"){
+        renderCategory(data, brand, brandSlug, model, modelSlug);
         return;
     }
 
-    if (itemData.type === "category") {
-        let html = `
-        <a href="/${brandSlug}" class="back-btn">← ${brand}</a>
-        <h1>${item}</h1>
-        <div class="grid">
-        `;
-
-        Object.keys(itemData.models).forEach(model => {
-            const modelData = itemData.models[model];
-
-            html += `
-            <a href="/${brandSlug}/${itemSlug}/${modelData.slug}" class="card">
-                <img src="${modelData.cover}" loading="lazy">
-                <div class="card-body">
-                    <div class="card-title">${model}</div>
-                </div>
-            </a>
-            `;
-        });
-
-        html += "</div>";
-        app.innerHTML = html;
-    }
+    renderGallery(model, `/${brandSlug}`, modelData.images);
 }
 
-function renderCategoryModel(data, brandSlug, categorySlug, modelSlug) {
-    const brand = Object.keys(data).find(b => data[b].slug === brandSlug);
+function renderCategory(data, brand, brandSlug, category, categorySlug){
 
-    if (!brand) {
+    const categoryData = data[brand].models[category];
+
+    let html = `
+    <a href="/${brandSlug}" class="back-btn">← ${brand}</a>
+
+    <h1>${category}</h1>
+
+    <div class="grid">
+    `;
+
+    Object.keys(categoryData.models).forEach(model => {
+
+        const modelData = categoryData.models[model];
+
+        html += `
+        <a href="/${brandSlug}/${categorySlug}/${modelData.slug}" class="card">
+            <img src="${modelData.cover}" loading="lazy">
+
+            <div class="card-body">
+                <div class="card-title">${model}</div>
+            </div>
+        </a>
+        `;
+
+    });
+
+    html += "</div>";
+
+    app.innerHTML = html;
+}
+
+function renderCategoryModel(data, brandSlug, categorySlug, modelSlug){
+
+    const brand = Object.keys(data)
+        .find(b => data[b].slug === brandSlug);
+
+    if(!brand){
         app.innerHTML = "<h1>Brand Not Found</h1>";
         return;
     }
 
-    const category = Object.keys(data[brand].items)
-        .find(i => data[brand].items[i].slug === categorySlug);
+    const category = Object.keys(data[brand].models)
+        .find(c => data[brand].models[c].slug === categorySlug);
 
-    if (!category) {
+    if(!category){
         app.innerHTML = "<h1>Category Not Found</h1>";
         return;
     }
 
-    const categoryData = data[brand].items[category];
+    const categoryData = data[brand].models[category];
 
-    if (categoryData.type !== "category") {
+    if(categoryData.type !== "category"){
         app.innerHTML = "<h1>Not Found</h1>";
         return;
     }
@@ -187,7 +239,7 @@ function renderCategoryModel(data, brandSlug, categorySlug, modelSlug) {
     const model = Object.keys(categoryData.models)
         .find(m => categoryData.models[m].slug === modelSlug);
 
-    if (!model) {
+    if(!model){
         app.innerHTML = "<h1>Model Not Found</h1>";
         return;
     }
@@ -195,19 +247,22 @@ function renderCategoryModel(data, brandSlug, categorySlug, modelSlug) {
     renderGallery(
         model,
         `/${brandSlug}/${categorySlug}`,
-        model,
         categoryData.models[model].images
     );
 }
 
-function renderGallery(title, backLink, heading, images) {
+function renderGallery(title, backLink, images){
+
     let html = `
     <a href="${backLink}" class="back-btn">← Back</a>
-    <h1>${heading}</h1>
+
+    <h1>${title}</h1>
+
     <div class="gallery">
     `;
 
-    images.forEach((img, index) => {
+    images.forEach((img,index) => {
+
         html += `
         <img
             src="${img}"
@@ -216,74 +271,97 @@ function renderGallery(title, backLink, heading, images) {
             loading="lazy"
         >
         `;
+
     });
 
     html += "</div>";
+
     app.innerHTML = html;
 
     currentImages = images;
+
     initLightbox();
 }
 
-function initLightbox() {
+function initLightbox(){
+
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightboxImg");
 
-    document.querySelectorAll(".gallery-img").forEach(img => {
-        img.addEventListener("click", () => {
-            currentIndex = Number(img.dataset.index);
-            openImage();
+    document.querySelectorAll(".gallery-img")
+        .forEach(img => {
+
+            img.addEventListener("click", () => {
+
+                currentIndex = Number(img.dataset.index);
+
+                openImage();
+
+            });
+
         });
-    });
 
     document.getElementById("closeBtn").onclick = () => {
         lightbox.style.display = "none";
     };
 
     document.getElementById("prevBtn").onclick = () => {
+
         currentIndex--;
 
-        if (currentIndex < 0) {
+        if(currentIndex < 0){
             currentIndex = currentImages.length - 1;
         }
 
         openImage();
+
     };
 
     document.getElementById("nextBtn").onclick = () => {
+
         currentIndex++;
 
-        if (currentIndex >= currentImages.length) {
+        if(currentIndex >= currentImages.length){
             currentIndex = 0;
         }
 
         openImage();
+
     };
 
     document.addEventListener("keydown", e => {
-        if (lightbox.style.display !== "flex") return;
 
-        if (e.key === "ArrowLeft") {
+        if(lightbox.style.display !== "flex"){
+            return;
+        }
+
+        if(e.key === "ArrowLeft"){
             document.getElementById("prevBtn").click();
         }
 
-        if (e.key === "ArrowRight") {
+        if(e.key === "ArrowRight"){
             document.getElementById("nextBtn").click();
         }
 
-        if (e.key === "Escape") {
+        if(e.key === "Escape"){
             lightbox.style.display = "none";
         }
+
     });
 
     lightbox.onclick = e => {
-        if (e.target === lightbox) {
+
+        if(e.target === lightbox){
             lightbox.style.display = "none";
         }
+
     };
 
-    function openImage() {
+    function openImage(){
+
         lightbox.style.display = "flex";
+
         lightboxImg.src = currentImages[currentIndex];
+
     }
 }

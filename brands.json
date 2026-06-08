@@ -2,7 +2,7 @@
   "Adidas": {
     "slug": "adidas",
     "cover": "/Adidas/cover.jpg",
-    "items": {
+    "models": {
       "Adizero": {
         "type": "model",
         "slug": "adizero",
@@ -199,7 +199,7 @@
   "Asics": {
     "slug": "asics",
     "cover": "/Asics/cover.jpg",
-    "items": {
+    "models": {
       "Asics Sabot": {
         "type": "model",
         "slug": "asics-sabot",
@@ -278,6 +278,12 @@
         "slug": "running-shoes",
         "cover": "/Asics/Running%20Shoes/cover.jpg",
         "models": {
+          "Mix": {
+            "type": "model",
+            "slug": "running-shoes",
+            "cover": "/Asics/Running%20Shoes/cover.jpg",
+            "images": []
+          },
           "Kayano 31 & 32": {
             "type": "model",
             "slug": "kayano-31-&-32",
@@ -387,7 +393,7 @@
   "Bape STA": {
     "slug": "bape-sta",
     "cover": "/Bape%20STA/cover.jpg",
-    "items": {
+    "models": {
       "Bape STA": {
         "type": "model",
         "slug": "bape-sta",
@@ -407,7 +413,7 @@
   "Brooks": {
     "slug": "brooks",
     "cover": "/Brooks/cover.jpg",
-    "items": {
+    "models": {
       "Brooks": {
         "type": "model",
         "slug": "brooks",
@@ -425,7 +431,7 @@
   "Converse": {
     "slug": "converse",
     "cover": "/Converse/cover.jpg",
-    "items": {
+    "models": {
       "Converse": {
         "type": "model",
         "slug": "converse",
@@ -468,7 +474,7 @@
   "Crocs": {
     "slug": "crocs",
     "cover": "/Crocs/cover.jpg",
-    "items": {
+    "models": {
       "Crocs": {
         "type": "model",
         "slug": "crocs",
@@ -517,7 +523,7 @@
   "Hoka": {
     "slug": "hoka",
     "cover": "/Hoka/cover.jpg",
-    "items": {
+    "models": {
       "Hoka": {
         "type": "model",
         "slug": "hoka",
@@ -555,7 +561,7 @@
   "Kids": {
     "slug": "kids",
     "cover": "/Kids/cover.jpg",
-    "items": {
+    "models": {
       "Kids": {
         "type": "model",
         "slug": "kids",
@@ -607,7 +613,7 @@
   "New Balance": {
     "slug": "new-balance",
     "cover": "/New%20Balance/cover.jpg",
-    "items": {
+    "models": {
       "Miu Miu": {
         "type": "model",
         "slug": "miu-miu",
@@ -802,7 +808,7 @@
   "Nike": {
     "slug": "nike",
     "cover": "/Nike/cover.jpg",
-    "items": {
+    "models": {
       "Air max": {
         "type": "model",
         "slug": "air-max",
@@ -1446,7 +1452,7 @@
   "ON Cloud": {
     "slug": "on-cloud",
     "cover": "/ON%20Cloud/cover.jpg",
-    "items": {
+    "models": {
       "On Cloud": {
         "type": "model",
         "slug": "on-cloud",
@@ -1670,7 +1676,7 @@
   "Onitsuka Tiger": {
     "slug": "onitsuka-tiger",
     "cover": "/Onitsuka%20Tiger/cover.jpg",
-    "items": {
+    "models": {
       "Mix": {
         "type": "model",
         "slug": "mix",
@@ -1729,7 +1735,7 @@
   "Puma": {
     "slug": "puma",
     "cover": "/Puma/cover.jpg",
-    "items": {
+    "models": {
       "Ballet": {
         "type": "model",
         "slug": "ballet",
@@ -1770,7 +1776,7 @@
   "Uggs": {
     "slug": "uggs",
     "cover": "/Uggs/cover.jpg",
-    "items": {
+    "models": {
       "UGGs": {
         "type": "model",
         "slug": "uggs",
@@ -1788,7 +1794,7 @@
   "Vans": {
     "slug": "vans",
     "cover": "/Vans/cover.jpg",
-    "items": {
+    "models": {
       "Vans": {
         "type": "model",
         "slug": "vans",
