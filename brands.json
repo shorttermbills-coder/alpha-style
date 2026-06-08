@@ -278,12 +278,6 @@
         "slug": "running-shoes",
         "cover": "/Asics/Running%20Shoes/cover.jpg",
         "models": {
-          "Mix": {
-            "type": "model",
-            "slug": "running-shoes",
-            "cover": "/Asics/Running%20Shoes/cover.jpg",
-            "images": []
-          },
           "Kayano 31 & 32": {
             "type": "model",
             "slug": "kayano-31-&-32",

@@ -138,7 +138,9 @@ for brand in list_sorted(ROOT):
         # إذا فيه sub models، يصبح Category
         # وإذا فيه صور مباشرة كمان، نضيفها كموديل اسمه Mix داخل الكاتيجوري
         if sub_models:
-            if folder_model:
+            # Add Mix only if this category folder has real direct images,
+            # not just cover.jpg.
+            if folder_model and folder_model.get("images"):
                 sub_models = {"Mix": folder_model, **sub_models}
 
             first_sub_model = next(iter(sub_models))
