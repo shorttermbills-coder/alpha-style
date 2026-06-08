@@ -34,7 +34,7 @@
       },
       "Campus": {
         "slug": "campus",
-        "cover": "/Adidas/Campus/Photo%20%289%29.jpg",
+        "cover": "/Adidas/Campus/cover.jpg",
         "images": [
           "/Adidas/Campus/Photo%20%289%29.jpg",
           "/Adidas/Campus/Photo%20%288%29.jpg",
@@ -56,7 +56,7 @@
       },
       "Gazelle": {
         "slug": "gazelle",
-        "cover": "/Adidas/Gazelle/Photo%20%289%29.jpg",
+        "cover": "/Adidas/Gazelle/cover.jpg",
         "images": [
           "/Adidas/Gazelle/Photo%20%289%29.jpg",
           "/Adidas/Gazelle/Photo%20%288%29.jpg",
@@ -148,7 +148,7 @@
       },
       "Samba Jane": {
         "slug": "samba-jane",
-        "cover": "/Adidas/Samba%20Jane/IMG_20260512_160314_715.jpg",
+        "cover": "/Adidas/Samba%20Jane/cover.jpg",
         "images": [
           "/Adidas/Samba%20Jane/IMG_20260512_160314_715.jpg",
           "/Adidas/Samba%20Jane/IMG_20260512_160227_842.jpg",
@@ -168,7 +168,7 @@
       },
       "Spezial": {
         "slug": "spezial",
-        "cover": "/Adidas/Spezial/Photo%20%289%29.jpg",
+        "cover": "/Adidas/Spezial/cover.jpg",
         "images": [
           "/Adidas/Spezial/Photo%20%289%29.jpg",
           "/Adidas/Spezial/Photo%20%288%29.jpg",
@@ -194,7 +194,7 @@
     "models": {
       "Asics Sabot": {
         "slug": "asics-sabot",
-        "cover": "/Asics/Asics%20Sabot/Photo%20%289%29.jpg",
+        "cover": "/Asics/Asics%20Sabot/cover.jpg",
         "images": [
           "/Asics/Asics%20Sabot/Photo%20%289%29.jpg",
           "/Asics/Asics%20Sabot/Photo%20%288%29.jpg",
@@ -210,7 +210,7 @@
       },
       "Ballet TGR": {
         "slug": "ballet-tgr",
-        "cover": "/Asics/Ballet%20TGR/IMG_20260529_003205.png",
+        "cover": "/Asics/Ballet%20TGR/cover.png",
         "images": [
           "/Asics/Ballet%20TGR/IMG_20260529_003205.png",
           "/Asics/Ballet%20TGR/IMG-20250501-WA0044.jpg",
@@ -228,7 +228,7 @@
       },
       "Kayano 14": {
         "slug": "kayano-14",
-        "cover": "/Asics/Kayano%2014/Picsart_25-09-05_11-33-22-756.jpg",
+        "cover": "/Asics/Kayano%2014/cover.jpg",
         "images": [
           "/Asics/Kayano%2014/Picsart_25-09-05_11-33-22-756.jpg",
           "/Asics/Kayano%2014/IMG-20260120-WA0010.jpg",
@@ -244,7 +244,7 @@
       },
       "NYC": {
         "slug": "nyc",
-        "cover": "/Asics/NYC/IMG_20260514_090714_969.jpg",
+        "cover": "/Asics/NYC/cover.jpg",
         "images": [
           "/Asics/NYC/IMG_20260514_090714_969.jpg",
           "/Asics/NYC/IMG-20260127-WA0067%283%29.jpg",
@@ -259,6 +259,11 @@
           "/Asics/NYC/IMG-20240630-WA0002%281%29.jpg",
           "/Asics/NYC/IMG-20240629-WA0048.jpg"
         ]
+      },
+      "Running Shoes": {
+        "slug": "running-shoes",
+        "cover": "/Asics/Running%20Shoes/cover.jpg",
+        "images": []
       }
     }
   },
@@ -482,7 +487,7 @@
     "models": {
       "Miu Miu": {
         "slug": "miu-miu",
-        "cover": "/New%20Balance/Miu%20Miu/Photo%20%289%29.jpg",
+        "cover": "/New%20Balance/Miu%20Miu/cover.jpg",
         "images": [
           "/New%20Balance/Miu%20Miu/Photo%20%289%29.jpg",
           "/New%20Balance/Miu%20Miu/Photo%20%288%29.jpg",
@@ -497,7 +502,7 @@
       },
       "NB 327": {
         "slug": "nb-327",
-        "cover": "/New%20Balance/NB%20327/Photo%20%289%29.jpeg",
+        "cover": "/New%20Balance/NB%20327/cover.jpeg",
         "images": [
           "/New%20Balance/NB%20327/Photo%20%289%29.jpeg",
           "/New%20Balance/NB%20327/Photo%20%288%29.jpg",
@@ -512,7 +517,7 @@
       },
       "NB 530": {
         "slug": "nb-530",
-        "cover": "/New%20Balance/NB%20530/Photo%20%286%29.jpeg",
+        "cover": "/New%20Balance/NB%20530/cover.png",
         "images": [
           "/New%20Balance/NB%20530/Photo%20%286%29.jpeg",
           "/New%20Balance/NB%20530/Photo%20%285%29.jpeg",
@@ -527,7 +532,7 @@
       },
       "NB 550": {
         "slug": "nb-550",
-        "cover": "/New%20Balance/NB%20550/Photo%20%289%29.jpg",
+        "cover": "/New%20Balance/NB%20550/cover.jpg",
         "images": [
           "/New%20Balance/NB%20550/Photo%20%289%29.jpg",
           "/New%20Balance/NB%20550/Photo%20%288%29.jpg",
@@ -544,7 +549,7 @@
       },
       "NB 740": {
         "slug": "nb-740",
-        "cover": "/New%20Balance/NB%20740/IMG_20260512_133458_962.jpg",
+        "cover": "/New%20Balance/NB%20740/cover.jpg",
         "images": [
           "/New%20Balance/NB%20740/IMG_20260512_133458_962.jpg",
           "/New%20Balance/NB%20740/IMG-20260426-WA0049%283%29.jpg",
@@ -565,7 +570,7 @@
       },
       "NB 9060": {
         "slug": "nb-9060",
-        "cover": "/New%20Balance/NB%209060/Photo%20%289%29.webp",
+        "cover": "/New%20Balance/NB%209060/cover.jpg",
         "images": [
           "/New%20Balance/NB%209060/Photo%20%289%29.webp",
           "/New%20Balance/NB%209060/Photo%20%288%29.jpg",
@@ -623,7 +628,7 @@
       },
       "Others": {
         "slug": "others",
-        "cover": "/New%20Balance/Others/Photo%20%289%29.jpg",
+        "cover": "/New%20Balance/Others/cover.jpg",
         "images": [
           "/New%20Balance/Others/Photo%20%289%29.jpg",
           "/New%20Balance/Others/Photo%20%288%29.jpg",
@@ -670,7 +675,7 @@
     "models": {
       "Air max": {
         "slug": "air-max",
-        "cover": "/Nike/Air%20max/Photo%20%20%287%29.jpg",
+        "cover": "/Nike/Air%20max/cover.jpg",
         "images": [
           "/Nike/Air%20max/Photo%20%20%287%29.jpg",
           "/Nike/Air%20max/Photo%20%20%286%29.jpg",
@@ -696,7 +701,7 @@
       },
       "Dunk": {
         "slug": "dunk",
-        "cover": "/Nike/Dunk/Photo%20%2899%29.jpg",
+        "cover": "/Nike/Dunk/cover.jpg",
         "images": [
           "/Nike/Dunk/Photo%20%2899%29.jpg",
           "/Nike/Dunk/Photo%20%2898%29.jpg",
@@ -878,7 +883,7 @@
       },
       "Initiator": {
         "slug": "initiator",
-        "cover": "/Nike/Initiator/file_00000000eadc720abff034ac5dd312fd.png",
+        "cover": "/Nike/Initiator/cover.jpg",
         "images": [
           "/Nike/Initiator/file_00000000eadc720abff034ac5dd312fd.png",
           "/Nike/Initiator/file_000000000b5c71f4a2a0bb8b609bd626.png",
@@ -888,7 +893,7 @@
       },
       "Jordan 1 high": {
         "slug": "jordan-1-high",
-        "cover": "/Nike/Jordan%201%20high/Photo%20%2899%29.jpg",
+        "cover": "/Nike/Jordan%201%20high/cover.png",
         "images": [
           "/Nike/Jordan%201%20high/Photo%20%2899%29.jpg",
           "/Nike/Jordan%201%20high/Photo%20%2898%29.jpg",
@@ -1008,7 +1013,7 @@
       },
       "Jordan 1 low": {
         "slug": "jordan-1-low",
-        "cover": "/Nike/Jordan%201%20low/Photo%20%2899%29.jpg",
+        "cover": "/Nike/Jordan%201%20low/cover.jpg",
         "images": [
           "/Nike/Jordan%201%20low/Photo%20%2899%29.jpg",
           "/Nike/Jordan%201%20low/Photo%20%2898%29.jpg",
@@ -1127,7 +1132,7 @@
       },
       "Jordan 4": {
         "slug": "jordan-4",
-        "cover": "/Nike/Jordan%204/Photo%20%289%29.jpg",
+        "cover": "/Nike/Jordan%204/cover.jpg",
         "images": [
           "/Nike/Jordan%204/Photo%20%289%29.jpg",
           "/Nike/Jordan%204/Photo%20%288%29.jpg",
@@ -1201,7 +1206,7 @@
       },
       "M2K": {
         "slug": "m2k",
-        "cover": "/Nike/M2K/Photo%20%284%29.jpeg",
+        "cover": "/Nike/M2K/cover.jpg",
         "images": [
           "/Nike/M2K/Photo%20%284%29.jpeg",
           "/Nike/M2K/Photo%20%283%29.jpg",
@@ -1211,7 +1216,7 @@
       },
       "Others": {
         "slug": "others",
-        "cover": "/Nike/Others/Photo%20%288%29.jpg",
+        "cover": "/Nike/Others/cover.jpg",
         "images": [
           "/Nike/Others/Photo%20%288%29.jpg",
           "/Nike/Others/Photo%20%287%29.jpg",
@@ -1225,7 +1230,7 @@
       },
       "P-6000": {
         "slug": "p-6000",
-        "cover": "/Nike/P-6000/Photo%20%286%29.jpeg",
+        "cover": "/Nike/P-6000/cover.jpg",
         "images": [
           "/Nike/P-6000/Photo%20%286%29.jpeg",
           "/Nike/P-6000/Photo%20%285%29.jpg",
@@ -1238,7 +1243,7 @@
       },
       "RNR": {
         "slug": "rnr",
-        "cover": "/Nike/RNR/IMG-20260204-WA0065.jpg",
+        "cover": "/Nike/RNR/cover.jpg",
         "images": [
           "/Nike/RNR/IMG-20260204-WA0065.jpg",
           "/Nike/RNR/IMG-20260204-WA0063.jpg",
@@ -1265,7 +1270,7 @@
       },
       "V2K": {
         "slug": "v2k",
-        "cover": "/Nike/V2K/Photo%20%286%29.jpg",
+        "cover": "/Nike/V2K/cover.jpg",
         "images": [
           "/Nike/V2K/Photo%20%286%29.jpg",
           "/Nike/V2K/Photo%20%285%29.jpg",
@@ -1278,7 +1283,7 @@
       },
       "Vomero": {
         "slug": "vomero",
-        "cover": "/Nike/Vomero/Photo%20%287%29.jpg",
+        "cover": "/Nike/Vomero/cover.jpg",
         "images": [
           "/Nike/Vomero/Photo%20%287%29.jpg",
           "/Nike/Vomero/Photo%20%286%29.jpg",
@@ -1579,9 +1584,8 @@
     "models": {
       "Ballet": {
         "slug": "ballet",
-        "cover": "/Puma/Ballet/Photo%20%285%29.jpg",
+        "cover": "/Puma/Ballet/cover.jpg",
         "images": [
-          "/Puma/Ballet/Photo%20%285%29.jpg",
           "/Puma/Ballet/png.jpeg",
           "/Puma/Ballet/IMG_20260512_153254_409.jpg",
           "/Puma/Ballet/IMG-20250527-WA0101%282%29.jpg",
@@ -1593,7 +1597,7 @@
       },
       "Speedcat": {
         "slug": "speedcat",
-        "cover": "/Puma/Speedcat/rn-image_picker_lib_temp_d5b4eda0-1b26-4dbf-8d0e-aa6e6d4fdc88.jpg",
+        "cover": "/Puma/Speedcat/cover.jpg",
         "images": [
           "/Puma/Speedcat/rn-image_picker_lib_temp_d5b4eda0-1b26-4dbf-8d0e-aa6e6d4fdc88.jpg",
           "/Puma/Speedcat/product-jpeg-1000x1000%20%281%29.jpg",
