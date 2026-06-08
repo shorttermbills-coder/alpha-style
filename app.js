@@ -9,11 +9,11 @@ let currentIndex = 0;
 const brandOrder = [
     "Adidas",
     "Nike",
-    "Asics",
     "New Balance",
-    "On Cloud",
-    "ON Cloud",
+    "Asics",    
+    "Onitsuka Tiger",
     "Puma",
+    "ON Cloud",
     "Kids",
     "Hoka",
     "Brooks",
@@ -22,6 +22,7 @@ const brandOrder = [
     "Converse",
     "Uggs",
     "Crocs"
+
 ];
 
 const modelOrder = {
