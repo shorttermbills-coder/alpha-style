@@ -9,44 +9,38 @@ let currentIndex = 0;
 fetch("/brands.json")
 .then(r => r.json())
 .then(data => {
+    const path = decodeURIComponent(location.pathname.replace(/^\/|\/$/g, ""));
 
-    const path = decodeURIComponent(
-        location.pathname.replace(/^\/|\/$/g, "")
-    );
-
-    if(path === ""){
+    if (path === "") {
         renderBrands(data);
         return;
     }
 
     const parts = path.split("/");
 
-    if(parts.length === 1){
-        renderModels(data, parts[0]);
+    if (parts.length === 1) {
+        renderBrandItems(data, parts[0]);
         return;
     }
 
-    if(parts.length === 2){
-        renderImages(data, parts[0], parts[1]);
+    if (parts.length === 2) {
+        renderSecondLevel(data, parts[0], parts[1]);
+        return;
     }
 
+    if (parts.length === 3) {
+        renderCategoryModel(data, parts[0], parts[1], parts[2]);
+        return;
+    }
 });
 
-function renderBrands(data){
-
-    let html = `
-    <h1>Brands</h1>
-    <div class="grid">
-    `;
-
-    const brandOrder = [
-     "Adidas",
+const brandOrder = [
+    "Adidas",
     "Nike",
-      "New Balance",
-  "Asics",    
-"Onitsuka Tiger",
-"Puma",
-"ON Cloud",
+    "Asics",
+    "New Balance",
+    "On Cloud",
+    "Puma",
     "Kids",
     "Hoka",
     "Brooks",
@@ -57,95 +51,44 @@ function renderBrands(data){
     "Crocs"
 ];
 
-const brands = Object.keys(data).sort((a, b) => {
+function sortBrands(data) {
+    return Object.keys(data).sort((a, b) => {
+        const ia = brandOrder.indexOf(a);
+        const ib = brandOrder.indexOf(b);
 
-    const ia = brandOrder.indexOf(a);
-    const ib = brandOrder.indexOf(b);
+        if (ia === -1 && ib === -1) return a.localeCompare(b);
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
 
-    if (ia === -1 && ib === -1) return a.localeCompare(b);
-    if (ia === -1) return 1;
-    if (ib === -1) return -1;
+        return ia - ib;
+    });
+}
 
-    return ia - ib;
-});
+function renderBrands(data) {
+    let html = `<h1>Brands</h1><div class="grid">`;
 
-brands.forEach(brand => {
-
+    sortBrands(data).forEach(brand => {
         html += `
         <a href="/${data[brand].slug}" class="card">
             <img src="${data[brand].cover}" loading="lazy">
-
             <div class="card-body">
                 <div class="card-title">${brand}</div>
             </div>
         </a>
         `;
-
     });
 
     html += "</div>";
     app.innerHTML = html;
 }
 
-function renderModels(data, brandSlug){
+function renderBrandItems(data, brandSlug) {
+    const brand = Object.keys(data).find(b => data[b].slug === brandSlug);
 
-    const brand = Object.keys(data)
-        .find(b => data[b].slug === brandSlug);
-
-    if(!brand){
-        app.innerHTML = "<h1>Not Found</h1>";
+    if (!brand) {
+        app.innerHTML = "<h1>Brand Not Found</h1>";
         return;
     }
-
-    const modelOrder = {
-        "Adidas": [
-            "Samba",
-            "Samba Jane",
-            "Adizero",
-            "Campus",
-            "Spezial",
-            "Japan",
-            "SL 72 RS"
-        ],
-
-        "Nike": [
-            "Vomero",
-            "V2K",
-            "RNR",
-            "P-6000",
-            "Initiator",
-            "Dunk",
-            "Jordan 1 low",
-            "Jordan 1 high",
-            "Jordan 4",
-            "Air max",
-            "M2K",
-            "Kobe",
-            "LDWaffle",
-            "Blazer",
-            "Uptempo",
-            "Others"
-        ],
-
-        "New Balance": [
-            "NB 740",
-            "NB 530",
-            "NB 327",
-            "NB 9060",
-            "NB 550",
-            "Miu Miu",
-            "Others"
-        ],
-
-        "Asics": [
-            "Kayano 14",
-            "NYC",
-            "Running Shoes",
-            "Asics Sabot",
-            "Ballet TGR",
-            "Contend"
-        ]
-    };
 
     let html = `
     <a href="/" class="back-btn">← Brands</a>
@@ -153,74 +96,118 @@ function renderModels(data, brandSlug){
     <div class="grid">
     `;
 
-    const models = Object.keys(data[brand].models).sort((a, b) => {
-        const order = modelOrder[brand];
-
-        if(!order){
-            return a.localeCompare(b);
-        }
-
-        const ia = order.indexOf(a);
-        const ib = order.indexOf(b);
-
-        if(ia === -1 && ib === -1) return a.localeCompare(b);
-        if(ia === -1) return 1;
-        if(ib === -1) return -1;
-
-        return ia - ib;
-    });
-
-    models.forEach(model => {
-
-        const modelData = data[brand].models[model];
+    Object.keys(data[brand].items).forEach(item => {
+        const itemData = data[brand].items[item];
 
         html += `
-        <a href="/${brandSlug}/${modelData.slug}" class="card">
-            <img src="${modelData.cover}" loading="lazy">
-
+        <a href="/${brandSlug}/${itemData.slug}" class="card">
+            <img src="${itemData.cover}" loading="lazy">
             <div class="card-body">
-                <div class="card-title">${model}</div>
-                <div class="card-count">
-                    ${modelData.images.length} Photos
-                </div>
+                <div class="card-title">${item}</div>
             </div>
         </a>
         `;
-
     });
 
     html += "</div>";
     app.innerHTML = html;
-
 }
 
-function renderImages(data, brandSlug, modelSlug){
+function renderSecondLevel(data, brandSlug, itemSlug) {
+    const brand = Object.keys(data).find(b => data[b].slug === brandSlug);
 
-    const brand = Object.keys(data)
-        .find(b => data[b].slug === brandSlug);
-
-    if(!brand){
+    if (!brand) {
         app.innerHTML = "<h1>Brand Not Found</h1>";
         return;
     }
 
-    const model = Object.keys(data[brand].models)
-        .find(m => data[brand].models[m].slug === modelSlug);
+    const item = Object.keys(data[brand].items)
+        .find(i => data[brand].items[i].slug === itemSlug);
 
-    if(!model){
+    if (!item) {
+        app.innerHTML = "<h1>Folder Not Found</h1>";
+        return;
+    }
+
+    const itemData = data[brand].items[item];
+
+    if (itemData.type === "model") {
+        renderGallery(brand, brandSlug, item, itemData.images);
+        return;
+    }
+
+    if (itemData.type === "category") {
+        let html = `
+        <a href="/${brandSlug}" class="back-btn">← ${brand}</a>
+        <h1>${item}</h1>
+        <div class="grid">
+        `;
+
+        Object.keys(itemData.models).forEach(model => {
+            const modelData = itemData.models[model];
+
+            html += `
+            <a href="/${brandSlug}/${itemSlug}/${modelData.slug}" class="card">
+                <img src="${modelData.cover}" loading="lazy">
+                <div class="card-body">
+                    <div class="card-title">${model}</div>
+                </div>
+            </a>
+            `;
+        });
+
+        html += "</div>";
+        app.innerHTML = html;
+    }
+}
+
+function renderCategoryModel(data, brandSlug, categorySlug, modelSlug) {
+    const brand = Object.keys(data).find(b => data[b].slug === brandSlug);
+
+    if (!brand) {
+        app.innerHTML = "<h1>Brand Not Found</h1>";
+        return;
+    }
+
+    const category = Object.keys(data[brand].items)
+        .find(i => data[brand].items[i].slug === categorySlug);
+
+    if (!category) {
+        app.innerHTML = "<h1>Category Not Found</h1>";
+        return;
+    }
+
+    const categoryData = data[brand].items[category];
+
+    if (categoryData.type !== "category") {
+        app.innerHTML = "<h1>Not Found</h1>";
+        return;
+    }
+
+    const model = Object.keys(categoryData.models)
+        .find(m => categoryData.models[m].slug === modelSlug);
+
+    if (!model) {
         app.innerHTML = "<h1>Model Not Found</h1>";
         return;
     }
 
-    const images = data[brand].models[model].images;
+    renderGallery(
+        model,
+        `/${brandSlug}/${categorySlug}`,
+        model,
+        categoryData.models[model].images
+    );
+}
 
+function renderGallery(title, backLink, heading, images) {
     let html = `
-    <a href="/${brandSlug}" class="back-btn">← ${brand}</a>
-    <h1>${model}</h1>
+    <a href="${backLink}" class="back-btn">← Back</a>
+    <h1>${heading}</h1>
     <div class="gallery">
     `;
 
-    images.forEach((img,index) => {
+    images.forEach((img, index) => {
         html += `
         <img
             src="${img}"
@@ -238,20 +225,16 @@ function renderImages(data, brandSlug, modelSlug){
     initLightbox();
 }
 
-function initLightbox(){
-
+function initLightbox() {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightboxImg");
 
-    document.querySelectorAll(".gallery-img")
-        .forEach(img => {
-
-            img.addEventListener("click", () => {
-                currentIndex = Number(img.dataset.index);
-                openImage();
-            });
-
+    document.querySelectorAll(".gallery-img").forEach(img => {
+        img.addEventListener("click", () => {
+            currentIndex = Number(img.dataset.index);
+            openImage();
         });
+    });
 
     document.getElementById("closeBtn").onclick = () => {
         lightbox.style.display = "none";
@@ -260,7 +243,7 @@ function initLightbox(){
     document.getElementById("prevBtn").onclick = () => {
         currentIndex--;
 
-        if(currentIndex < 0){
+        if (currentIndex < 0) {
             currentIndex = currentImages.length - 1;
         }
 
@@ -270,7 +253,7 @@ function initLightbox(){
     document.getElementById("nextBtn").onclick = () => {
         currentIndex++;
 
-        if(currentIndex >= currentImages.length){
+        if (currentIndex >= currentImages.length) {
             currentIndex = 0;
         }
 
@@ -278,32 +261,28 @@ function initLightbox(){
     };
 
     document.addEventListener("keydown", e => {
+        if (lightbox.style.display !== "flex") return;
 
-        if(lightbox.style.display !== "flex"){
-            return;
-        }
-
-        if(e.key === "ArrowLeft"){
+        if (e.key === "ArrowLeft") {
             document.getElementById("prevBtn").click();
         }
 
-        if(e.key === "ArrowRight"){
+        if (e.key === "ArrowRight") {
             document.getElementById("nextBtn").click();
         }
 
-        if(e.key === "Escape"){
+        if (e.key === "Escape") {
             lightbox.style.display = "none";
         }
-
     });
 
     lightbox.onclick = e => {
-        if(e.target === lightbox){
+        if (e.target === lightbox) {
             lightbox.style.display = "none";
         }
     };
 
-    function openImage(){
+    function openImage() {
         lightbox.style.display = "flex";
         lightboxImg.src = currentImages[currentIndex];
     }

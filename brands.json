@@ -2,8 +2,9 @@
   "Adidas": {
     "slug": "adidas",
     "cover": "/Adidas/cover.jpg",
-    "models": {
+    "items": {
       "Adizero": {
+        "type": "model",
         "slug": "adizero",
         "cover": "/Adidas/Adizero/cover.jpg",
         "images": [
@@ -33,6 +34,7 @@
         ]
       },
       "Campus": {
+        "type": "model",
         "slug": "campus",
         "cover": "/Adidas/Campus/cover.jpg",
         "images": [
@@ -55,6 +57,7 @@
         ]
       },
       "Gazelle": {
+        "type": "model",
         "slug": "gazelle",
         "cover": "/Adidas/Gazelle/cover.jpg",
         "images": [
@@ -73,6 +76,7 @@
         ]
       },
       "Japan": {
+        "type": "model",
         "slug": "japan",
         "cover": "/Adidas/Japan/IMG-20250618-WA0035.jpg",
         "images": [
@@ -82,6 +86,7 @@
         ]
       },
       "Samba": {
+        "type": "model",
         "slug": "samba",
         "cover": "/Adidas/Samba/cover.jpg",
         "images": [
@@ -147,6 +152,7 @@
         ]
       },
       "Samba Jane": {
+        "type": "model",
         "slug": "samba-jane",
         "cover": "/Adidas/Samba%20Jane/cover.jpg",
         "images": [
@@ -156,6 +162,7 @@
         ]
       },
       "SL 72 RS": {
+        "type": "model",
         "slug": "sl-72-rs",
         "cover": "/Adidas/SL%2072%20RS/Photo%20%285%29.jpg",
         "images": [
@@ -167,6 +174,7 @@
         ]
       },
       "Spezial": {
+        "type": "model",
         "slug": "spezial",
         "cover": "/Adidas/Spezial/cover.jpg",
         "images": [
@@ -191,8 +199,9 @@
   "Asics": {
     "slug": "asics",
     "cover": "/Asics/cover.jpg",
-    "models": {
+    "items": {
       "Asics Sabot": {
+        "type": "model",
         "slug": "asics-sabot",
         "cover": "/Asics/Asics%20Sabot/cover.jpg",
         "images": [
@@ -209,6 +218,7 @@
         ]
       },
       "Ballet TGR": {
+        "type": "model",
         "slug": "ballet-tgr",
         "cover": "/Asics/Ballet%20TGR/cover.png",
         "images": [
@@ -220,6 +230,7 @@
         ]
       },
       "Contend": {
+        "type": "model",
         "slug": "contend",
         "cover": "/Asics/Contend/Asics%20Contend.jpeg",
         "images": [
@@ -227,6 +238,7 @@
         ]
       },
       "Kayano 14": {
+        "type": "model",
         "slug": "kayano-14",
         "cover": "/Asics/Kayano%2014/cover.jpg",
         "images": [
@@ -243,6 +255,7 @@
         ]
       },
       "NYC": {
+        "type": "model",
         "slug": "nyc",
         "cover": "/Asics/NYC/cover.jpg",
         "images": [
@@ -261,17 +274,122 @@
         ]
       },
       "Running Shoes": {
+        "type": "category",
         "slug": "running-shoes",
         "cover": "/Asics/Running%20Shoes/cover.jpg",
-        "images": []
+        "models": {
+          "Kayano 31 & 32": {
+            "type": "model",
+            "slug": "kayano-31-&-32",
+            "cover": "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20251212-WA0018.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20251212-WA0018.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20251009-WA0017%282%29.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20250811-WA0023%281%29.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20250617-WA0031.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20250522-WA0020.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20250515-WA0008.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20250514-WA0043.jpg",
+              "/Asics/Running%20Shoes/Kayano%2031%20%26%2032/IMG-20250514-WA0034.jpg"
+            ]
+          },
+          "Magic": {
+            "type": "model",
+            "slug": "magic",
+            "cover": "/Asics/Running%20Shoes/Magic/IMG-20250731-WA0013.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Magic/IMG-20250731-WA0013.jpg",
+              "/Asics/Running%20Shoes/Magic/IMG-20250730-WA0034%282%29.jpg",
+              "/Asics/Running%20Shoes/Magic/IMG-20250730-WA0029%281%29.jpg"
+            ]
+          },
+          "Metaspeed": {
+            "type": "model",
+            "slug": "metaspeed",
+            "cover": "/Asics/Running%20Shoes/Metaspeed/IMG-20250519-WA0001.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Metaspeed/IMG-20250519-WA0001.jpg",
+              "/Asics/Running%20Shoes/Metaspeed/IMG-20250518-WA0002.jpg",
+              "/Asics/Running%20Shoes/Metaspeed/IMG-20250517-WA0038.jpg",
+              "/Asics/Running%20Shoes/Metaspeed/IMG-20250516-WA0062.jpg"
+            ]
+          },
+          "Nimbus 26": {
+            "type": "model",
+            "slug": "nimbus-26",
+            "cover": "/Asics/Running%20Shoes/Nimbus%2026/IMG-20250930-WA0057.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20250930-WA0057.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20250812-WA0052%281%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20250812-WA0015%281%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20250227-WA0027%281%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20250226-WA0008.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20240913-WA0077.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2026/IMG-20240913-WA0074.jpg"
+            ]
+          },
+          "Nimbus 27": {
+            "type": "model",
+            "slug": "nimbus-27",
+            "cover": "/Asics/Running%20Shoes/Nimbus%2027/IMG_20260528_225820_029.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG_20260528_225820_029.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20251020-WA0040.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20251020-WA0036%283%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250822-WA0003%281%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250812-WA0016.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250608-WA0005.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250604-WA0042.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250603-WA0002.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250602-WA0001.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250601-WA0024.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250424-WA0158.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250424-WA0157.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250424-WA0149.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250301-WA0032%281%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250301-WA0028%281%29.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250301-WA0022.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250227-WA0123.jpg",
+              "/Asics/Running%20Shoes/Nimbus%2027/IMG-20250227-WA0117%281%29.jpg"
+            ]
+          },
+          "Novablast 5": {
+            "type": "model",
+            "slug": "novablast-5",
+            "cover": "/Asics/Running%20Shoes/Novablast%205/IMG-20250421-WA0048%281%29.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Novablast%205/IMG-20250421-WA0048%281%29.jpg",
+              "/Asics/Running%20Shoes/Novablast%205/IMG-20250329-WA0014%281%29.jpg",
+              "/Asics/Running%20Shoes/Novablast%205/207690098-1-black.jpeg",
+              "/Asics/Running%20Shoes/Novablast%205/207677841-1-grey%20%281%29.jpeg"
+            ]
+          },
+          "Superblast 2": {
+            "type": "model",
+            "slug": "superblast-2",
+            "cover": "/Asics/Running%20Shoes/Superblast%202/IMG-20251008-WA0030%281%29.jpg",
+            "images": [
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20251008-WA0030%281%29.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20251007-WA0020%281%29.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20250616-WA0012.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20250512-WA0024.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20250420-WA0082.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20250419-WA0054.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/IMG-20250405-WA0042.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/FB_IMG_1779996650904.jpg",
+              "/Asics/Running%20Shoes/Superblast%202/FB_IMG_1779996449900.jpg"
+            ]
+          }
+        }
       }
     }
   },
   "Bape STA": {
     "slug": "bape-sta",
     "cover": "/Bape%20STA/cover.jpg",
-    "models": {
+    "items": {
       "Bape STA": {
+        "type": "model",
         "slug": "bape-sta",
         "cover": "/Bape%20STA/Bape%20STA/Photo%20%287%29.jpg",
         "images": [
@@ -289,8 +407,9 @@
   "Brooks": {
     "slug": "brooks",
     "cover": "/Brooks/cover.jpg",
-    "models": {
+    "items": {
       "Brooks": {
+        "type": "model",
         "slug": "brooks",
         "cover": "/Brooks/Brooks/IMG-20260118-WA0004%281%29.jpg",
         "images": [
@@ -306,8 +425,9 @@
   "Converse": {
     "slug": "converse",
     "cover": "/Converse/cover.jpg",
-    "models": {
+    "items": {
       "Converse": {
+        "type": "model",
         "slug": "converse",
         "cover": "/Converse/Converse/Photo%20%289%29.jpg",
         "images": [
@@ -348,8 +468,9 @@
   "Crocs": {
     "slug": "crocs",
     "cover": "/Crocs/cover.jpg",
-    "models": {
+    "items": {
       "Crocs": {
+        "type": "model",
         "slug": "crocs",
         "cover": "/Crocs/Crocs/Photo%20%289%29.jpg",
         "images": [
@@ -396,8 +517,9 @@
   "Hoka": {
     "slug": "hoka",
     "cover": "/Hoka/cover.jpg",
-    "models": {
+    "items": {
       "Hoka": {
+        "type": "model",
         "slug": "hoka",
         "cover": "/Hoka/Hoka/IMG-20251122-WA0024.jpg",
         "images": [
@@ -433,8 +555,9 @@
   "Kids": {
     "slug": "kids",
     "cover": "/Kids/cover.jpg",
-    "models": {
+    "items": {
       "Kids": {
+        "type": "model",
         "slug": "kids",
         "cover": "/Kids/Kids/Photo%20%289%29.jpg",
         "images": [
@@ -484,8 +607,9 @@
   "New Balance": {
     "slug": "new-balance",
     "cover": "/New%20Balance/cover.jpg",
-    "models": {
+    "items": {
       "Miu Miu": {
+        "type": "model",
         "slug": "miu-miu",
         "cover": "/New%20Balance/Miu%20Miu/cover.jpg",
         "images": [
@@ -501,6 +625,7 @@
         ]
       },
       "NB 327": {
+        "type": "model",
         "slug": "nb-327",
         "cover": "/New%20Balance/NB%20327/cover.jpeg",
         "images": [
@@ -516,6 +641,7 @@
         ]
       },
       "NB 530": {
+        "type": "model",
         "slug": "nb-530",
         "cover": "/New%20Balance/NB%20530/cover.png",
         "images": [
@@ -531,6 +657,7 @@
         ]
       },
       "NB 550": {
+        "type": "model",
         "slug": "nb-550",
         "cover": "/New%20Balance/NB%20550/cover.jpg",
         "images": [
@@ -548,6 +675,7 @@
         ]
       },
       "NB 740": {
+        "type": "model",
         "slug": "nb-740",
         "cover": "/New%20Balance/NB%20740/cover.jpg",
         "images": [
@@ -569,6 +697,7 @@
         ]
       },
       "NB 9060": {
+        "type": "model",
         "slug": "nb-9060",
         "cover": "/New%20Balance/NB%209060/cover.jpg",
         "images": [
@@ -627,6 +756,7 @@
         ]
       },
       "Others": {
+        "type": "model",
         "slug": "others",
         "cover": "/New%20Balance/Others/cover.jpg",
         "images": [
@@ -672,8 +802,9 @@
   "Nike": {
     "slug": "nike",
     "cover": "/Nike/cover.jpg",
-    "models": {
+    "items": {
       "Air max": {
+        "type": "model",
         "slug": "air-max",
         "cover": "/Nike/Air%20max/cover.jpg",
         "images": [
@@ -688,6 +819,7 @@
         ]
       },
       "Blazer": {
+        "type": "model",
         "slug": "blazer",
         "cover": "/Nike/Blazer/Photo%20%286%29.jpg",
         "images": [
@@ -700,6 +832,7 @@
         ]
       },
       "Dunk": {
+        "type": "model",
         "slug": "dunk",
         "cover": "/Nike/Dunk/cover.jpg",
         "images": [
@@ -882,6 +1015,7 @@
         ]
       },
       "Initiator": {
+        "type": "model",
         "slug": "initiator",
         "cover": "/Nike/Initiator/cover.jpg",
         "images": [
@@ -892,6 +1026,7 @@
         ]
       },
       "Jordan 1 high": {
+        "type": "model",
         "slug": "jordan-1-high",
         "cover": "/Nike/Jordan%201%20high/cover.png",
         "images": [
@@ -1012,6 +1147,7 @@
         ]
       },
       "Jordan 1 low": {
+        "type": "model",
         "slug": "jordan-1-low",
         "cover": "/Nike/Jordan%201%20low/cover.jpg",
         "images": [
@@ -1131,6 +1267,7 @@
         ]
       },
       "Jordan 4": {
+        "type": "model",
         "slug": "jordan-4",
         "cover": "/Nike/Jordan%204/cover.jpg",
         "images": [
@@ -1178,6 +1315,7 @@
         ]
       },
       "Kobe": {
+        "type": "model",
         "slug": "kobe",
         "cover": "/Nike/Kobe/Photo%20%289%29.jpg",
         "images": [
@@ -1196,6 +1334,7 @@
         ]
       },
       "LDWaffle": {
+        "type": "model",
         "slug": "ldwaffle",
         "cover": "/Nike/LDWaffle/Photo%20%283%29.jpg",
         "images": [
@@ -1205,6 +1344,7 @@
         ]
       },
       "M2K": {
+        "type": "model",
         "slug": "m2k",
         "cover": "/Nike/M2K/cover.jpg",
         "images": [
@@ -1215,6 +1355,7 @@
         ]
       },
       "Others": {
+        "type": "model",
         "slug": "others",
         "cover": "/Nike/Others/cover.jpg",
         "images": [
@@ -1229,6 +1370,7 @@
         ]
       },
       "P-6000": {
+        "type": "model",
         "slug": "p-6000",
         "cover": "/Nike/P-6000/cover.jpg",
         "images": [
@@ -1242,6 +1384,7 @@
         ]
       },
       "RNR": {
+        "type": "model",
         "slug": "rnr",
         "cover": "/Nike/RNR/cover.jpg",
         "images": [
@@ -1257,6 +1400,7 @@
         ]
       },
       "Uptempo": {
+        "type": "model",
         "slug": "uptempo",
         "cover": "/Nike/Uptempo/Photo%20%286%29.jpg",
         "images": [
@@ -1269,6 +1413,7 @@
         ]
       },
       "V2K": {
+        "type": "model",
         "slug": "v2k",
         "cover": "/Nike/V2K/cover.jpg",
         "images": [
@@ -1282,6 +1427,7 @@
         ]
       },
       "Vomero": {
+        "type": "model",
         "slug": "vomero",
         "cover": "/Nike/Vomero/cover.jpg",
         "images": [
@@ -1300,8 +1446,9 @@
   "ON Cloud": {
     "slug": "on-cloud",
     "cover": "/ON%20Cloud/cover.jpg",
-    "models": {
+    "items": {
       "On Cloud": {
+        "type": "model",
         "slug": "on-cloud",
         "cover": "/ON%20Cloud/On%20Cloud/99.jpg",
         "images": [
@@ -1523,8 +1670,9 @@
   "Onitsuka Tiger": {
     "slug": "onitsuka-tiger",
     "cover": "/Onitsuka%20Tiger/cover.jpg",
-    "models": {
+    "items": {
       "Mix": {
+        "type": "model",
         "slug": "mix",
         "cover": "/Onitsuka%20Tiger/cover.jpg",
         "images": [
@@ -1581,8 +1729,9 @@
   "Puma": {
     "slug": "puma",
     "cover": "/Puma/cover.jpg",
-    "models": {
+    "items": {
       "Ballet": {
+        "type": "model",
         "slug": "ballet",
         "cover": "/Puma/Ballet/cover.jpg",
         "images": [
@@ -1596,6 +1745,7 @@
         ]
       },
       "Speedcat": {
+        "type": "model",
         "slug": "speedcat",
         "cover": "/Puma/Speedcat/cover.jpg",
         "images": [
@@ -1620,8 +1770,9 @@
   "Uggs": {
     "slug": "uggs",
     "cover": "/Uggs/cover.jpg",
-    "models": {
+    "items": {
       "UGGs": {
+        "type": "model",
         "slug": "uggs",
         "cover": "/Uggs/UGGs/Photo%20%285%29.jpg",
         "images": [
@@ -1637,8 +1788,9 @@
   "Vans": {
     "slug": "vans",
     "cover": "/Vans/cover.jpg",
-    "models": {
+    "items": {
       "Vans": {
+        "type": "model",
         "slug": "vans",
         "cover": "/Vans/Vans/vans-knu-skool-skate-buty-schuhe-boty-shoes-black-16.webp",
         "images": [
