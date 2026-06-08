@@ -24,6 +24,75 @@ const brandOrder = [
     "Crocs"
 ];
 
+const modelOrder = {
+    "Adidas": [
+        "Samba",
+        "Samba Jane",
+        "Adizero",
+        "Campus",
+        "Spezial",
+        "Japan",
+        "SL 72 RS"
+    ],
+
+    "Nike": [
+        "Vomero",
+        "V2K",
+        "RNR",
+        "P-6000",
+        "Initiator",
+        "Dunk",
+        "Jordan 1 low",
+        "Jordan 1 high",
+        "Jordan 4",
+        "Air max",
+        "M2K",
+        "Kobe",
+        "LDWaffle",
+        "Blazer",
+        "Uptempo",
+        "Others"
+    ],
+
+    "New Balance": [
+        "NB 740",
+        "NB 530",
+        "NB 327",
+        "NB 9060",
+        "NB 550",
+        "Miu Miu",
+        "Others"
+    ],
+
+    "Asics": [
+        "Kayano 14",
+        "NYC",
+        "Running Shoes",
+        "Asics Sabot",
+        "Ballet TGR",
+        "Contend"
+    ]
+};
+
+function sortedModelsForBrand(brand, models){
+    const order = modelOrder[brand];
+
+    if(!order){
+        return models;
+    }
+
+    return models.sort((a, b) => {
+        const ia = order.indexOf(a);
+        const ib = order.indexOf(b);
+
+        if(ia === -1 && ib === -1) return 0;
+        if(ia === -1) return 1;
+        if(ib === -1) return -1;
+
+        return ia - ib;
+    });
+}
+
 fetch("/brands.json")
 .then(r => r.json())
 .then(data => {
@@ -129,7 +198,7 @@ function renderModels(data, brandSlug){
     <div class="grid">
     `;
 
-    Object.keys(data[brand].models).forEach(model => {
+    sortedModelsForBrand(brand, Object.keys(data[brand].models)).forEach(model => {
 
         const modelData = data[brand].models[model];
 
