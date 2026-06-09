@@ -180,7 +180,13 @@ function sortedBrands(data){
 function renderBrands(data){
 
     let html = `
-    <h1>Brands</h1>
+    <div class="site-header">
+        <div></div>
+        <h1>Alpha Style UAE</h1>
+        <a href="https://instagram.com/alphastyleuae" target="_blank" class="instagram-link">
+            📷 @alphastyleuae
+        </a>
+    </div>
     <div class="grid">
     `;
 
