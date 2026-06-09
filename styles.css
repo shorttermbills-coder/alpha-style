@@ -146,6 +146,7 @@ font-size:18px;
 }
 
 .instagram-link img{
-width:32px;
-height:32px;
+width:28px;
+height:28px;
+object-fit:contain;
 }
