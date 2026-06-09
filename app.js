@@ -16,12 +16,14 @@ const brandOrder = [
     "ON Cloud",
     "Kids",
     "Hoka",
+    "ALO",
+    "Maison Margaiela",
     "Brooks",
+    "Golden Goose",
     "Vans",
     "Bape STA",
     "Converse",
-    "Uggs",
-    "Crocs"
+    "Uggs"
 
 ];
 
@@ -37,15 +39,19 @@ const modelOrder = {
     ],
 
     "Nike": [
-        "Vomero",
-        "V2K",
         "RNR",
+        "Vomero 5",
+        "V2K",
         "P-6000",
         "Initiator",
         "Dunk",
-        "Jordan 1 low",
-        "Jordan 1 high",
+        "Jordan 1 Low",
+        "Jordan 1 High",
         "Jordan 4",
+        "Mind",
+        "Vomero Plus",
+        "Vomero Premium",
+        "Zoom Structure",
         "Air max",
         "M2K",
         "Kobe",
@@ -53,15 +59,24 @@ const modelOrder = {
         "Blazer",
         "Uptempo",
         "Others"
+
     ],
 
     "New Balance": [
         "NB 740",
         "NB 530",
-        "NB 327",
+        "NB 204",
         "NB 9060",
+        "NB 1000",
+        "NB 1906",
+        "NB 1906L",
+        "NB 327",
+        "NB 471",
+        "NB 990",
         "NB 550",
         "Miu Miu",
+        "NB Abzorb",
+        "NB Fresh Foam",
         "Others"
     ],
 
@@ -72,7 +87,14 @@ const modelOrder = {
         "Asics Sabot",
         "Ballet TGR",
         "Contend"
+    ],
+
+    "Puma": [
+        "Speedcat",
+        "Ballet",
+
     ]
+
 };
 
 function sortedModelsForBrand(brand, models){
