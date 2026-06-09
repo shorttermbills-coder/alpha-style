@@ -184,7 +184,7 @@ function renderBrands(data){
         <div></div>
         <h1>Alpha Style UAE</h1>
         <a href="https://instagram.com/alphastyleuae" target="_blank" class="instagram-link">
-            📷 @alphastyleuae
+            <img src="instagram-logo.png" alt="Instagram"> @alphastyleuae
         </a>
     </div>
     <div class="grid">
