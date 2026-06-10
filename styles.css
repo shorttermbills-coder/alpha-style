@@ -152,63 +152,72 @@ object-fit:contain;
 display:block;
 }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
 
 body{
-padding:12px;
+padding:10px !important;
 }
 
 .grid{
-grid-template-columns:repeat(2, 1fr);
-gap:10px;
+display:grid !important;
+grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+gap:8px !important;
 }
 
 .card{
-border-radius:10px;
+border-radius:8px !important;
 }
 
 .card-body{
-padding:8px;
+padding:7px !important;
 }
 
 .card-title{
-font-size:14px;
+font-size:13px !important;
+line-height:1.2 !important;
 }
 
 .site-header{
-grid-template-columns:1fr;
-gap:8px;
-text-align:center;
+display:grid !important;
+grid-template-columns:1fr !important;
+gap:8px !important;
+text-align:center !important;
+margin-bottom:16px !important;
 }
 
 .site-header h1{
-font-size:28px;
+font-size:26px !important;
+line-height:1.1 !important;
 }
 
 .instagram-link{
-justify-self:center;
-font-size:14px;
+justify-self:center !important;
+font-size:13px !important;
+gap:6px !important;
 }
 
 .instagram-link img{
-width:26px;
-height:26px;
+width:24px !important;
+height:24px !important;
 }
 
 .gallery{
-grid-template-columns:repeat(2, 1fr);
-gap:10px;
+display:grid !important;
+grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+gap:8px !important;
 }
 
-.nav-btn{
-font-size:38px;
-padding:12px;
 }
 
-#closeBtn{
-font-size:34px;
-top:14px;
-right:22px;
+@media (max-width: 380px){
+
+.grid{
+grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+gap:7px !important;
+}
+
+.card-title{
+font-size:12px !important;
 }
 
 }
