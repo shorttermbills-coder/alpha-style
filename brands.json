@@ -1687,7 +1687,7 @@
       "On Cloud": {
         "type": "model",
         "slug": "on-cloud",
-        "cover": "/ON%20Cloud/On%20Cloud/99.jpg",
+        "cover": "/ON%20Cloud/On%20Cloud/cover.jpg",
         "images": [
           "/ON%20Cloud/On%20Cloud/99.jpg",
           "/ON%20Cloud/On%20Cloud/98.jpg",
@@ -2029,7 +2029,7 @@
       "Vans": {
         "type": "model",
         "slug": "vans",
-        "cover": "/Vans/Vans/vans-knu-skool-skate-buty-schuhe-boty-shoes-black-16.webp",
+        "cover": "/Vans/Vans/cover.jpg",
         "images": [
           "/Vans/Vans/vans-knu-skool-skate-buty-schuhe-boty-shoes-black-16.webp",
           "/Vans/Vans/IMG-20240712-WA0011%283%29.jpg",
