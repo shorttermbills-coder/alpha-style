@@ -8,6 +8,7 @@
         "slug": "adizero",
         "cover": "/Adidas/Adizero/cover.jpg",
         "images": [
+          "/Adidas/Adizero/IMG_20260611_153123_489.jpg",
           "/Adidas/Adizero/IMG_20260512_163752_974.jpg",
           "/Adidas/Adizero/IMG_20260512_163655_875.jpg",
           "/Adidas/Adizero/IMG-20260124-WA0034.jpg",
@@ -29,8 +30,7 @@
           "/Adidas/Adizero/IMG-20250801-WA0003.jpg",
           "/Adidas/Adizero/IMG-20250717-WA0016%281%29.jpg",
           "/Adidas/Adizero/IMG-20250716-WA0009.jpg",
-          "/Adidas/Adizero/IMG-20250531-WA0032.jpg",
-          "/Adidas/Adizero/00833203205cfefa.jpg"
+          "/Adidas/Adizero/IMG-20250531-WA0032.jpg"
         ]
       },
       "Campus": {
@@ -156,7 +156,7 @@
         "slug": "samba-jane",
         "cover": "/Adidas/Samba%20Jane/cover.jpg",
         "images": [
-          "/Adidas/Samba%20Jane/IMG_20260512_160314_715.jpg",
+          "/Adidas/Samba%20Jane/IMG_20260611_151933.jpg",
           "/Adidas/Samba%20Jane/IMG_20260512_160227_842.jpg",
           "/Adidas/Samba%20Jane/IMG_20260512_160044_954.jpg"
         ]
