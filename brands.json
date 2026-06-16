@@ -205,10 +205,10 @@
         "slug": "alo",
         "cover": "/ALO/ALO/cover.png",
         "images": [
-          "/ALO/ALO/file_000000002cec71f48bfd3ba440027e12.png",
-          "/ALO/ALO/FB_IMG_1780846446228.jpg",
-          "/ALO/ALO/FB_IMG_1780846442889.jpg",
-          "/ALO/ALO/IMG-20250909-WA0012%286%29.jpg"
+          "/ALO/ALO/file_000000001104720a987a05435708b413.png",
+          "/ALO/ALO/IMG_20260617_003031.jpg",
+          "/ALO/ALO/IMG_20260614_043948.jpg",
+          "/ALO/ALO/file_000000002cec71f48bfd3ba440027e12.png"
         ]
       }
     }
@@ -254,8 +254,8 @@
         "slug": "ballet-tgr",
         "cover": "/Asics/Ballet%20TGR/cover.png",
         "images": [
-          "/Asics/Ballet%20TGR/IMG_20260529_003205.png",
-          "/Asics/Ballet%20TGR/IMG-20250501-WA0044.jpg",
+          "/Asics/Ballet%20TGR/file_00000000e49c71f4a9459c584c3b0fc0.png",
+          "/Asics/Ballet%20TGR/file_00000000372471f4b6c5f794cd9ae2b3.png",
           "/Asics/Ballet%20TGR/Giay-Onitsuka-Tiger-Mexico-66-TGRS-Silver-Cream-1182A660-020-2-1.png",
           "/Asics/Ballet%20TGR/FB_IMG_1780003828314.jpg",
           "/Asics/Ballet%20TGR/FB_IMG_1780003434599.jpg"
@@ -443,11 +443,12 @@
       "Brooks": {
         "type": "model",
         "slug": "brooks",
-        "cover": "/Brooks/Brooks/IMG-20260118-WA0004%281%29.jpg",
+        "cover": "/Brooks/Brooks/45790852-803b-44c0-b4ec-2d0ca1653300-1000x1000-hBIG7vHxOVjG5Uxdv6pdSG57GapmLodSqEW8KIfh.webp",
         "images": [
+          "/Brooks/Brooks/45790852-803b-44c0-b4ec-2d0ca1653300-1000x1000-hBIG7vHxOVjG5Uxdv6pdSG57GapmLodSqEW8KIfh.webp",
+          "/Brooks/Brooks/IMG_20260609_123003_785.jpg",
           "/Brooks/Brooks/IMG-20260118-WA0004%281%29.jpg",
           "/Brooks/Brooks/IMG-20260118-WA0003%281%29.jpg",
-          "/Brooks/Brooks/IMG-20251016-WA0046%282%29.jpg",
           "/Brooks/Brooks/IMG-20251015-WA0019%282%29.jpg",
           "/Brooks/Brooks/IMG-20251013-WA0030%283%29.jpg"
         ]
@@ -665,15 +666,15 @@
   },
   "Maison Margaiela": {
     "slug": "maison-margaiela",
-    "cover": "/Maison%20Margaiela/cover.jpg",
+    "cover": "/Maison%20Margaiela/Maison%20Margaiela/cover.jpg",
     "models": {
       "Maison Margaiela": {
         "type": "model",
         "slug": "maison-margaiela",
         "cover": "/Maison%20Margaiela/Maison%20Margaiela/cover.jpg",
         "images": [
-          "/Maison%20Margaiela/Maison%20Margaiela/70_53748aff-5e7d-4578-a307-05e820288210.png",
-          "/Maison%20Margaiela/Maison%20Margaiela/7ca14941ed2e6ab4daf16dd3e120b5a7.jpg_720x720q80.jpg_.webp"
+          "/Maison%20Margaiela/Maison%20Margaiela/c5d2c6839ce1cf63b7216f82dee10628.jpg",
+          "/Maison%20Margaiela/Maison%20Margaiela/70_53748aff-5e7d-4578-a307-05e820288210.png"
         ]
       }
     }
@@ -696,7 +697,8 @@
           "/New%20Balance/Miu%20Miu/Photo%20%283%29.jpg",
           "/New%20Balance/Miu%20Miu/Photo%20%282%29.jpg",
           "/New%20Balance/Miu%20Miu/Photo%20%281%29.jpg",
-          "/New%20Balance/Miu%20Miu/IMG-20241229-WA0007%282%29.jpg"
+          "/New%20Balance/Miu%20Miu/IMG-20241229-WA0007%282%29.jpg",
+          "/New%20Balance/Miu%20Miu/IMG-20241230-WA0026%281%29.jpg"
         ]
       },
       "NB 1000": {
@@ -971,19 +973,19 @@
     "slug": "nike",
     "cover": "/Nike/cover.jpg",
     "models": {
-      "Air max": {
+      "Air Max": {
         "type": "model",
         "slug": "air-max",
-        "cover": "/Nike/Air%20max/cover.jpg",
+        "cover": "/Nike/Air%20Max/cover.jpg",
         "images": [
-          "/Nike/Air%20max/Photo%20%20%287%29.jpg",
-          "/Nike/Air%20max/Photo%20%20%286%29.jpg",
-          "/Nike/Air%20max/Photo%20%20%285%29.jpg",
-          "/Nike/Air%20max/Photo%20%20%284%29.jpg",
-          "/Nike/Air%20max/Photo%20%20%283%29.jpg",
-          "/Nike/Air%20max/Photo%20%20%282%29.webp",
-          "/Nike/Air%20max/Photo%20%20%281%29.jpg",
-          "/Nike/Air%20max/IMG-20250406-WA0044.jpg"
+          "/Nike/Air%20Max/Photo%20%20%287%29.jpg",
+          "/Nike/Air%20Max/Photo%20%20%286%29.jpg",
+          "/Nike/Air%20Max/Photo%20%20%285%29.jpg",
+          "/Nike/Air%20Max/Photo%20%20%284%29.jpg",
+          "/Nike/Air%20Max/Photo%20%20%283%29.jpg",
+          "/Nike/Air%20Max/Photo%20%20%282%29.webp",
+          "/Nike/Air%20Max/Photo%20%20%281%29.jpg",
+          "/Nike/Air%20Max/IMG-20250406-WA0044.jpg"
         ]
       },
       "Blazer": {
@@ -1578,15 +1580,15 @@
         "slug": "rnr",
         "cover": "/Nike/RNR/cover.jpg",
         "images": [
-          "/Nike/RNR/IMG-20260204-WA0065.jpg",
+          "/Nike/RNR/IMG_20260613_174617.jpg",
+          "/Nike/RNR/IMG_20260613_165908.jpg",
           "/Nike/RNR/IMG-20260204-WA0063.jpg",
           "/Nike/RNR/IMG-20260108-WA0075%281%29.jpg",
           "/Nike/RNR/IMG-20260108-WA0018.jpg",
           "/Nike/RNR/IMG-20260107-WA0035.jpg",
           "/Nike/RNR/IMG-20260107-WA0006%282%29.jpg",
           "/Nike/RNR/IMG-20260106-WA0014.jpg",
-          "/Nike/RNR/IMG-20260104-WA0029%281%29.jpg",
-          "/Nike/RNR/IMG-20250705-WA0044%281%29.jpg"
+          "/Nike/RNR/IMG-20260104-WA0029%281%29.jpg"
         ]
       },
       "Uptempo": {
@@ -1657,9 +1659,9 @@
         "slug": "vomero-premium",
         "cover": "/Nike/Vomero%20Premium/cover.jpg",
         "images": [
+          "/Nike/Vomero%20Premium/0cadc4d2-c748-4bd5-bc03-0b238ecc448c-07adf66907182f0b6717761822668170-1024-1024.jpg",
           "/Nike/Vomero%20Premium/625008877_18388489027149349_3465872051009330306_n.jpg",
           "/Nike/Vomero%20Premium/703861404_17932920117259387_5109366561730939975_n.jpg",
-          "/Nike/Vomero%20Premium/703947705_17932920105259387_5373969415362035528_n.jpg",
           "/Nike/Vomero%20Premium/703824758_17932920108259387_7874749763156067255_n.jpg",
           "/Nike/Vomero%20Premium/IMG-20260515-WA0001%281%29.jpg",
           "/Nike/Vomero%20Premium/IMG-20260508-WA0008.jpg",
@@ -1956,7 +1958,6 @@
           "/Onitsuka%20Tiger/Onitsuka%20Tiger/IMG-20260426-WA0070%281%29.jpg",
           "/Onitsuka%20Tiger/Onitsuka%20Tiger/IMG-20260425-WA0005%281%29.jpg",
           "/Onitsuka%20Tiger/Onitsuka%20Tiger/IMG-20260210-WA0048.jpg",
-          "/Onitsuka%20Tiger/Onitsuka%20Tiger/IMG-20260210-WA0048%281%29.jpg",
           "/Onitsuka%20Tiger/Onitsuka%20Tiger/IMG-20250612-WA0046.jpg",
           "/Onitsuka%20Tiger/Onitsuka%20Tiger/FB_IMG_1780001206713.jpg"
         ]
