@@ -205,9 +205,9 @@
         "slug": "alo",
         "cover": "/ALO/ALO/cover.png",
         "images": [
+          "/ALO/ALO/IMG_20260614_043948.jpg",
           "/ALO/ALO/file_000000001104720a987a05435708b413.png",
           "/ALO/ALO/IMG_20260617_003031.jpg",
-          "/ALO/ALO/IMG_20260614_043948.jpg",
           "/ALO/ALO/file_000000002cec71f48bfd3ba440027e12.png"
         ]
       }
@@ -462,7 +462,7 @@
       "Converse": {
         "type": "model",
         "slug": "converse",
-        "cover": "/Converse/Converse/Photo%20%289%29.jpg",
+        "cover": "/Converse/Converse/cover.jpg",
         "images": [
           "/Converse/Converse/Photo%20%289%29.jpg",
           "/Converse/Converse/Photo%20%288%29.jpg",
@@ -616,7 +616,7 @@
       "Kids": {
         "type": "model",
         "slug": "kids",
-        "cover": "/Kids/Kids/Photo%20%289%29.jpg",
+        "cover": "/Kids/Kids/cover.jpg",
         "images": [
           "/Kids/Kids/Photo%20%289%29.jpg",
           "/Kids/Kids/Photo%20%288%29.jpg",
@@ -666,7 +666,7 @@
   },
   "Maison Margaiela": {
     "slug": "maison-margaiela",
-    "cover": "/Maison%20Margaiela/Maison%20Margaiela/cover.jpg",
+    "cover": "/Maison%20Margaiela/cover.jpg",
     "models": {
       "Maison Margaiela": {
         "type": "model",
@@ -2012,7 +2012,7 @@
       "UGGs": {
         "type": "model",
         "slug": "uggs",
-        "cover": "/Uggs/UGGs/Photo%20%285%29.jpg",
+        "cover": "/Uggs/UGGs/cover.jpg",
         "images": [
           "/Uggs/UGGs/Photo%20%285%29.jpg",
           "/Uggs/UGGs/Photo%20%284%29.jpg",

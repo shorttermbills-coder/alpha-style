@@ -52,7 +52,7 @@ const modelOrder = {
         "Vomero Plus",
         "Vomero Premium",
         "Zoom Structure",
-        "Air max",
+        "Air Max",
         "M2K",
         "Kobe",
         "LDWaffle",
