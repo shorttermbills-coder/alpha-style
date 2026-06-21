@@ -455,6 +455,35 @@ function initLightbox(){
 
     };
 
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    lightbox.addEventListener("touchstart", e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    lightbox.addEventListener("touchend", e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe(){
+        const swipeDistance = touchEndX - touchStartX;
+
+        if(Math.abs(swipeDistance) < 50){
+            return;
+        }
+
+        if(swipeDistance < 0){
+            document.getElementById("nextBtn").click();
+        }
+
+        if(swipeDistance > 0){
+            document.getElementById("prevBtn").click();
+        }
+    }
+
     function openImage(){
 
         lightbox.style.display = "flex";
